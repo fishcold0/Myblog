@@ -369,6 +369,10 @@ a.pageVector {
     font-size: 32px;
 }
 
+.email:hover{
+    font-size: 3em;
+}
+
 .icon {
     width: 220px;
     display: flex;
@@ -378,6 +382,10 @@ a.pageVector {
 
     width: 44px;
     height: 44px;
+}
+
+.icon-a:hover{
+    background-color:cornflowerblue;
 }
 
 footer {
