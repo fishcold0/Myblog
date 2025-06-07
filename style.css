@@ -153,44 +153,49 @@ body {
     font-family: "Noto Sans", sans-serif;
     font-weight: 500;
     line-height: 1.5;
-    max-width: 1920px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 nav {
-    padding: 24px 870px;
     display: flex;
-    gap: 0 40px;
-    align-items: center;
-    text-align: center;
+    gap: 40px;
+    justify-content: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 24px auto;
 }
 
 .nav_a {
     color: black;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .title {
-    height: 834px;
     display: flex;
-    align-items: center;
+    height: calc(100vh - 90px);
 }
 
+
 .title-left {
-    width: 50%;
+    width: 50vw;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto;
 }
 
 .title-right {
-    width: 50%;
-    height: 100%;
+    width: 50vw;
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/index/Hero%20Section2.png?raw=true');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 300px 548px 300px 80px ;
-
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title-text {
@@ -226,15 +231,16 @@ a {
 .latest-article {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    gap: 24px;
+    border: 1px black solid;
 }
 
 .latest-img {
-    width: 948px;
+    width: 50vw;
 }
 
 .lastest-inf {
-    width: 948px;
+    width: 50vw;
     align-self: center;
 }
 
@@ -261,7 +267,7 @@ a {
 }
 
 .card {
-    width: 416px;
+    width: 32%;
     margin: 40px 0;
 }
 
@@ -280,8 +286,10 @@ time {
     font-size: 24px;
     color: #0027D5;
     margin-right: 8px;
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
+    font-weight: 500;
 }
 
 .card-title {
@@ -326,8 +334,8 @@ time {
     display: block;
     width: 328px;
     height: 56px;
-    margin: 0 auto;
-    line-height: 56px
+    margin-bottom: 64px;
+    line-height: 56px;
 }
 
 a.pageNo {
@@ -358,10 +366,17 @@ a.pageVector {
     color: #fff;
 }
 
+footer {
+    margin-top: 64px;
+}
+
 .contact {
+    max-width: 1296px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 80px 0;
+    border
 }
 
 .email {
@@ -369,7 +384,7 @@ a.pageVector {
     font-size: 32px;
 }
 
-.email:hover{
+.email:hover {
     font-size: 3em;
 }
 
@@ -384,10 +399,97 @@ a.pageVector {
     height: 44px;
 }
 
-.icon-a:hover{
-    background-color:cornflowerblue;
+.icon-a:hover {
+    background-color: cornflowerblue;
 }
 
-footer {
+.right {
     text-align: center;
+    padding: 24px 0;
+}
+
+@media (max-width:992px) {
+body{
+    width: 100%;
+}
+
+    .title {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .title-left {
+        width: 100vw;
+        height: calc(100vh - 90px - 180px);
+    }
+
+    .title-right {
+        width: 100vw;
+        padding: 24px;
+    }
+
+    h1{
+        font-size: 52px;
+    }
+
+    .latest-article {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .latest-img {
+        width: 100%;
+    }
+
+    .lastest-inf {
+        width: 93%;
+        align-self: center;
+        margin: 48px 0;
+    }
+
+    .container {
+        width: 93%;
+        margin: 0 auto;
+    }
+
+    .search {
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 64px;
+    }
+
+
+    .article-list {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .page {
+        margin: 0 auto;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .email {
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .icon>img {
+        display: none;
+    }
+    .right{
+        border: solid 1px black;
+    }
 }
