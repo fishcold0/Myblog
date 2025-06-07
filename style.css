@@ -331,6 +331,7 @@ time {
 }
 
 .page {
+    margin: 0 auto;
     display: block;
     width: 328px;
     height: 56px;
@@ -472,6 +473,7 @@ body{
 
     .page {
         margin: 0 auto;
+        max-width: 328px;
     }
 
     .contact {
