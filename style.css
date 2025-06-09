@@ -178,7 +178,7 @@ nav {
 
 
 .title-left {
-    width: 50vw;
+    width: 50%;
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true');
     background-size: cover;
     background-position: center center;
@@ -187,7 +187,7 @@ nav {
 }
 
 .title-right {
-    width: 50vw;
+    width: 50%;
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/index/Hero%20Section2.png?raw=true');
     background-size: cover;
     background-position: center center;
@@ -236,11 +236,11 @@ a {
 }
 
 .latest-img {
-    width: 50vw;
+    width: 50%;
 }
 
 .lastest-inf {
-    width: 50vw;
+    width: 50%;
     align-self: center;
 }
 
@@ -420,12 +420,12 @@ body{
     }
 
     .title-left {
-        width: 100vw;
+        width: 100%;
         height: calc(100vh - 90px - 180px);
     }
 
     .title-right {
-        width: 100vw;
+        width: 100%;
         padding: 24px;
     }
 
